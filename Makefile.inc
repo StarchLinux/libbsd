@@ -46,7 +46,7 @@ AINC+=  -nostdinc -idirafter ${DESTDIR}/usr/include
 #.endif
 #.include "${LIBCSRCDIR}/regex/Makefile.inc"
 #.include "${LIBCSRCDIR}/rpc/Makefile.inc"
-#.include "${LIBCSRCDIR}/stdio/Makefile.inc"
+.include "${LIBCSRCDIR}/stdio/Makefile.inc"
 #.include "${LIBCSRCDIR}/stdlib/Makefile.inc"
 #.include "${LIBCSRCDIR}/string/Makefile.inc"
 #.include "${LIBCSRCDIR}/termios/Makefile.inc"
