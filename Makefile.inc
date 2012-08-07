@@ -40,7 +40,7 @@ AINC+=  -nostdinc -idirafter ${DESTDIR}/usr/include
 #.include "${LIBCSRCDIR}/locale/Makefile.inc"
 #.include "${LIBCSRCDIR}/net/Makefile.inc"
 #.include "${LIBCSRCDIR}/nls/Makefile.inc"
-#.include "${LIBCSRCDIR}/ohash/Makefile.inc"
+.include "${LIBCSRCDIR}/ohash/Makefile.inc"
 #.if (${MACHINE_CPU} != "alpha")
 #.include "${LIBCSRCDIR}/quad/Makefile.inc"
 #.endif
