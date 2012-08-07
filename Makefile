@@ -51,6 +51,7 @@ tags: ${SRCS}
 	    >> tags; sort -o tags tags
 
 beforeinstall:
+	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 555 ${DESTDIR}/var/db
 	${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m 444 tags \
 		${DESTDIR}/var/db/lib${LIB}.tags
 
