@@ -7,7 +7,7 @@
 #include "ohash.h"
 
 struct _ohash_record {
-	u_int32_t	hv;
+	uint32_t	hv;
 	const char 	*p;
 };
 

@@ -22,7 +22,7 @@
 unsigned int
 ohash_qlookupi(struct ohash *h, const char *s, const char **e)
 {
-	u_int32_t hv;
+	uint32_t hv;
 
 	hv = ohash_interval(s, e);
 	return ohash_lookup_interval(h, s, *e, hv);
