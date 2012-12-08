@@ -48,7 +48,7 @@ tags: ${SRCS}
 	egrep "^SYSENTRY(.*)|^ENTRY(.*)|^FUNC(.*)|^SYSCALL(.*)" \
 	    /dev/null ${.ALLSRC:M*.S} | \
 	    sed "s;\([^:]*\):\([^(]*\)(\([^, )]*\)\(.*\);\3	\1	/^\2(\3\4$$/;" \
-	    >> tags; sort -o tags tags
+	    >> tags; echo tags | situ sort
 
 beforeinstall:
 	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 555 ${DESTDIR}/var/db
