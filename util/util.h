@@ -47,8 +47,6 @@
 #define FPARSELN_UNESCREST	0x08
 #define FPARSELN_UNESCALL	0x0f
 
-__BEGIN_DECLS
 char   *fparseln(FILE *, size_t *, size_t *, const char[3], int);
-__END_DECLS
 
 #endif /* !_UTIL_H_ */
