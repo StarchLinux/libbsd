@@ -9,6 +9,8 @@
 
 .include <bsd.own.mk>
 
+HDR = include/ohash.h
+
 LIB=bsd
 CLEANFILES+=tags
 #CFLAGS+=-Werror
@@ -56,3 +58,6 @@ beforeinstall:
 		${DESTDIR}/var/db/lib${LIB}.tags
 
 .include <bsd.lib.mk>
+.include <bsd.hdr.mk>
+
+install: hdrinstall
