@@ -53,7 +53,7 @@ tags: ${SRCS}
 	    >> tags; echo tags | situ sort
 
 beforeinstall:
-	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 555 ${DESTDIR}/var/db
+	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 755 ${DESTDIR}/var/db
 	${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m 444 tags \
 		${DESTDIR}/var/db/lib${LIB}.tags
 
